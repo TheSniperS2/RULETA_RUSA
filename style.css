@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se coloquen en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    text-align: center;
+    background-color: #fff;
+    padding: 5vh;
+    border-radius: 2vh;
+    box-shadow: 0 0 1vh rgba(0, 0, 0, 0.1);
+    width: 80vw;
+    max-width: 60vh;
+}
+
+h1 {
+    margin-bottom: 2vh; /* Espacio entre el título y el siguiente elemento */
+    font-size: 3vh;
+}
+
+#status {
+    margin: 2vh 0; /* Espacio arriba y abajo del estado */
+    font-size: 2vh;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    margin-bottom: 3vh; /* Espacio inferior después de los botones */
+}
+
+button {
+    padding: 2vh 3vw;
+    font-size: 2vh;
+    border: none;
+    border-radius: 1vh;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#resetBtn {
+    background-color: #28a745;
+}
+
+#resetBtn:hover {
+    background-color: #218838;
+}
+
+div {
+    margin: 2vh;
+}
+
+/* Estilos para el contenedor de imágenes y la imagen de la pistola */
+#image-container {
+    margin-top: 5vh; /* Espacio entre el estado y la imagen */
+    text-align: center;
+}
+
+#pistolImage {
+    width: 20vw;
+    height: 20vh;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}

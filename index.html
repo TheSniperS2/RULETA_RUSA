@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruleta Rusa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ruleta Rusa</h1>
+        <div id="status">Jugador 1: ¿Estás listo?</div>
+        <div class="buttons">
+            <button id="shootRivalBtn">Disparar al rival</button>
+            <button id="shootSelfBtn">Dispararse a sí mismo</button>
+            <button id="nextTurnBtn" style="display:none;">Siguiente Turno</button>
+        </div>
+        <div id="image-container">
+            <img id="pistolImage" src="https://png.pngtree.com/png-clipart/20230825/original/pngtree-handgun--pistol-vector-aiming-ammo-picture-image_8469919.png" alt="Imagen de la pistola">
+        </div>
+        <button id="instructionsBtn">¿Cómo se juega?</button>
+        <div id="instructions" style="display:none;">
+            <strong>Bienvenido a Ruleta Rusa. Aquí están las instrucciones:</strong>
+            <br>
+            <ul>
+                <li>Hay dos jugadores que se turnan para disparar.
+                Puedes elegir disparar al rival o dispararte a ti mismo.</li>
+                <li>Si te disparas a ti mismo y sobrevives, tienes la oportunidad de volver a disparar.</li>
+                <li>Un revolver tiene 6 casquillos, de las cuales una contiene una bala.
+                Si aciertas, el otro jugador pierde. Si fallas, el turno pasa al siguiente jugador.</li>
+                <li>El juego continúa hasta que todos los disparos se realicen.</li>
+                <strong>BUENA SUERTE 😈</strong>
+            </ul>
+            <br>
+            <button id="closeInstructionsBtn">Cerrar</button>
+        </div>
+        <div id="scoreContainer">
+            <p>Jugador 1: <span id="scorePlayer1">0</span></p>
+            <p>Jugador 2: <span id="scorePlayer2">0</span></p>
+        </div>
+        <button id="resetBtn" style="display:none;">Reiniciar Juego</button>
+        <audio id="failSound" src="sonidos/disparo.mp3" preload="auto"></audio>
+        <audio id="reloadSound" src="sonidos/recarga.mp3" preload="auto"></audio>
+        <audio id="backgroundMusic" autoplay loop controls>
+            <source src="sonidos/cancion.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
